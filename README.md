@@ -68,4 +68,6 @@ Yolov5 is similar to Yolov4 but differs in the following ways:
 Yolov5 is built on top of the PyTorch framework.
 - Yolov4 configures using.cfg files, however Yolov5 configures using.yaml files. 
 
+For further details, please see the [Yolov5 Github repository](https://github.com/ultralytics/yolov5). 
+
 
