@@ -49,5 +49,13 @@ annotation tool.
 As a result, this essay will go through YOLOv4 in detail so that you can comprehend YOLOv5.
 To further understand how Yolov5 enhanced speed and design, consider the following high-level Object detection architecture: 
 ![source](https://github.com/adrienpayong/object-detection/blob/main/Capture1.PNG)
+A backbone will be used to pre-train the General Object Detector, and a head will be used to predict classes and bounding boxes.
+The Backbones may operate on either GPU or CPU platforms.
+For Dense prediction, the Head may be one-stage (e.g., YOLO, SSD, RetinaNet) or two-stage (e.g., Faster R-CNN) for the Sparse prediction object detector.
+Recent Object Detectors contain certain layers (Neck) to gather feature maps, which are located between the backbone and the Head.
+
+In YOLOv4, CSPDarknet53 is utilized as a backbone and SPP block to increase the receptive field, which isolates the essential features, and the network operation performance is not reduced.
+PAN is used to aggregate parameters from multiple backbone levels.
+For YOLOv4, the YOLOv3 (anchor-based) head is utilized. 
 
 
