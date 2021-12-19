@@ -20,15 +20,15 @@ You may create a robot or a self-driving vehicle that can recognize and pick fru
 
 ## Aim
 
-To build a robust fruit detection system using YOLOv4.
+To build a robust fruit detection system using YOLOv5.
 Tech stack
 - Language: Python
 - Object detection: YOLOv5
 - Data annotation: Robotflow
 - Environment: Google Colab
 
-### Approach
-## Data collection and Labeling
+## Approach
+### Data collection and Labeling
 
 To create a custom object detector, we need an excellent dataset of images and
 labels so that the sensor can efficiently train to detect objects.
@@ -41,5 +41,5 @@ minutes. [Explore that dataset here!](https://storage.googleapis.com/openimages/
  #### b. Creating your dataset and then labelling it manually
 We will create a dataset manually by collecting images from google image
 scraper or manually clicking them and then marking them using an image
-annotation tool, LabelImg
+annotation tool.
 
