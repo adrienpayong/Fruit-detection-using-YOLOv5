@@ -54,7 +54,7 @@ The Backbones may operate on either GPU or CPU platforms.
 For Dense prediction, the Head may be one-stage (e.g., YOLO, SSD, RetinaNet) or two-stage (e.g., Faster R-CNN) for the Sparse prediction object detector.
 Recent Object Detectors contain certain layers (Neck) to gather feature maps, which are located between the backbone and the Head.
 
-In YOLOv4, CSPDarknet53 is utilized as a backbone and SPP block to increase the receptive field, which isolates the essential features, and the network operation performance is not reduced.
+In YOLOv4, [CSPDarknet53](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w28/Wang_CSPNet_A_New_Backbone_That_Can_Enhance_Learning_Capability_of_CVPRW_2020_paper.pdf) is utilized as a backbone and [SPP](https://arxiv.org/abs/1406.4729) block to increase the receptive field, which isolates the essential features, and the network operation performance is not reduced.
 PAN is used to aggregate parameters from multiple backbone levels.
 For YOLOv4, the YOLOv3 (anchor-based) head is utilized. 
 
