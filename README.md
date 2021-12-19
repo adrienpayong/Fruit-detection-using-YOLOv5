@@ -63,5 +63,9 @@ YOLOv4 included two new data augmentation methods: Mosaic and Self-Adversarial T
 Self-Adversarial Training is divided into two stages: forward and backward.
 In the first step, the network modifies merely the image rather than the weights.
 The network is trained to detect an object on the changed image in the second step. 
+Yolov5 is similar to Yolov4 but differs in the following ways:
+- Yolov4 was provided as part of the Darknet framework, which is written in C.
+Yolov5 is built on top of the PyTorch framework.
+- Yolov4 configures using.cfg files, however Yolov5 configures using.yaml files. 
 
 
