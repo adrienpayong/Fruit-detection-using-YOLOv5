@@ -29,6 +29,8 @@ Tech stack
 
 ### Approach
 1. Data collection and Labeling
+
+
 To create a custom object detector, we need an excellent dataset of images and
 labels so that the sensor can efficiently train to detect objects.
 We can do this in two ways.
