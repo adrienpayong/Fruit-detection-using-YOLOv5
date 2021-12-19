@@ -27,7 +27,6 @@ Tech stack
 - Data annotation: Robotflow
 - Environment: Google Colab
 
-## Approach
 ### Data collection and Labeling
 
 To create a custom object detector, we need an excellent dataset of images and
@@ -70,7 +69,7 @@ Yolov5 is built on top of the PyTorch framework.
 
 For further details, please see the [Yolov5 Github repository](https://github.com/ultralytics/yolov5). 
 
-Steps Covered in this project
+### Steps Covered in this project
 
 To train our detector we take the following steps:
 
