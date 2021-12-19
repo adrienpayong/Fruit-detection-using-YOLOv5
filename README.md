@@ -70,4 +70,18 @@ Yolov5 is built on top of the PyTorch framework.
 
 For further details, please see the [Yolov5 Github repository](https://github.com/ultralytics/yolov5). 
 
+Steps Covered in this project
+
+To train our detector we take the following steps:
+
+    - Install YOLOv5 dependencies
+    - Download custom YOLOv5 object detection data
+    - Write our YOLOv5 Training configuration
+    - Run YOLOv5 training
+    - Evaluate YOLOv5 performance
+    - Visualize YOLOv5 training data
+    - Run YOLOv5 inference on test images
+    - Export saved YOLOv5 weights for future inference
+
+
 
