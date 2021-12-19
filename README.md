@@ -1,4 +1,4 @@
-
+# Fruit detection using YOLOv5
 
 The food we eat is receiving a lot of attention due to the fast development of technology.
 Skilled labor is one of the most expensive components in the agricultural business.
