@@ -19,12 +19,13 @@ Manual harvesting of the fruits will also need a large staff.
 You may create a robot or a self-driving vehicle that can recognize and pick fruits from specified trees. 
 
 ## Aim
+
 To build a robust fruit detection system using YOLOv4.
 Tech stack
-● Language: Python
-● Object detection: YOLOv4
-● Data annotation: Robotflow
-● Environment: Google Colab
+- Language: Python
+- Object detection: YOLOv5
+- Data annotation: Robotflow
+- Environment: Google Colab
 
 
 
