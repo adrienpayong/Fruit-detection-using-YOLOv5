@@ -48,5 +48,6 @@ annotation tool.
  There is no paper on YOLOv5 as of August 1, 2021.
 As a result, this essay will go through YOLOv4 in detail so that you can comprehend YOLOv5.
 To further understand how Yolov5 enhanced speed and design, consider the following high-level Object detection architecture: 
+![source](https://github.com/adrienpayong/object-detection/blob/main/Capture1.PNG)
 
 
