@@ -1,3 +1,5 @@
+# Aim
+
 The food we eat is receiving a lot of attention due to the fast development of technology.
 Skilled labor is one of the most expensive components in the agricultural business.
 The industry is leaning toward automation in order to reduce labor costs while improving quality.
@@ -15,3 +17,6 @@ As a result, you may create an automated system that detects fruits and separate
 2. You are the proud owner of a massive orchid.
 Manual harvesting of the fruits will also need a large staff.
 You may create a robot or a self-driving vehicle that can recognize and pick fruits from specified trees. 
+
+
+
