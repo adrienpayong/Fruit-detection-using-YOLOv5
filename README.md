@@ -27,5 +27,18 @@ Tech stack
 - Data annotation: Robotflow
 - Environment: Google Colab
 
+### Approach
+1. Data collection and Labeling
+To create a custom object detector, we need an excellent dataset of images and
+labels so that the sensor can efficiently train to detect objects.
+We can do this in two ways.
 
+ #### a. Using Google's Open Images Dataset
+We can gather thousands of images and their auto-generated labels within
+minutes. Explore that dataset here!
+
+ #### b. Creating your dataset and then labelling it manually
+We will create a dataset manually by collecting images from google image
+scraper or manually clicking them and then marking them using an image
+annotation tool, LabelImg
 
