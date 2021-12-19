@@ -48,7 +48,8 @@ annotation tool.
  There is no paper on YOLOv5 as of August 1, 2021.
 As a result, this essay will go through YOLOv4 in detail so that you can comprehend YOLOv5.
 To further understand how Yolov5 enhanced speed and design, consider the following high-level Object detection architecture: 
-![source](https://github.com/adrienpayong/object-detection/blob/main/Capture1.PNG)
+![source](https://github.com/adrienpayong/object-detection/blob/main/Capture1.PNG).
+
 A backbone will be used to pre-train the General Object Detector, and a head will be used to predict classes and bounding boxes.
 The Backbones may operate on either GPU or CPU platforms.
 For Dense prediction, the Head may be one-stage (e.g., YOLO, SSD, RetinaNet) or two-stage (e.g., Faster R-CNN) for the Sparse prediction object detector.
@@ -57,5 +58,10 @@ Recent Object Detectors contain certain layers (Neck) to gather feature maps, wh
 In YOLOv4, [CSPDarknet53](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w28/Wang_CSPNet_A_New_Backbone_That_Can_Enhance_Learning_Capability_of_CVPRW_2020_paper.pdf) is utilized as a backbone and [SPP](https://arxiv.org/abs/1406.4729) block to increase the receptive field, which isolates the essential features, and the network operation performance is not reduced.
 PAN is used to aggregate parameters from multiple backbone levels.
 For YOLOv4, the YOLOv3 (anchor-based) head is utilized. 
+YOLOv4 included two new data augmentation methods: Mosaic and Self-Adversarial Training (SAT).
+[Mosaic](https://arxiv.org/pdf/2004.10934.pdf) is a combination of four training images.
+Self-Adversarial Training is divided into two stages: forward and backward.
+In the first step, the network modifies merely the image rather than the weights.
+The network is trained to detect an object on the changed image in the second step. 
 
 
