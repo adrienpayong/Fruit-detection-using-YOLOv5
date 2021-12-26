@@ -255,6 +255,7 @@ For training, a mosaic dataloader (shown below) is employed, a novel dataloading
 Furthermore, the model records two weighting results as pt files.
 last.pt is the weight at the last epoch. The weight at the last epoch for highest accuracy is best.pt
 Both files are under 14MB in size, making them easy to incorporate into AI systems. 
+
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture6.PNG)
 
 **7) Running Inference on Test Images**
