@@ -73,7 +73,7 @@ For further details, please see the [Yolov5 Github repository](https://github.co
 
 To train our detector we take the following steps:
 
-1) Install YOLOv5 dependencies
+**1) Install YOLOv5 dependencies**
 
 YOLOv5 is built by Ultralystic using the PyTorch framework, which is one of the most popular in the AI community.
 However, this is simply a basic design; researchers may modify it to provide the best results for specific issues by adding layers, eliminating blocks, including new image processing techniques, modifying the optimization methods or activation functions, and so on. 
@@ -89,7 +89,7 @@ import torch
 from IPython.display import Image, clear_output  # to display images
 from utils.google_utils import gdrive_download  # to download models/datasets
 ```
-2) Download a Custom Dataset that is Properly Formatted
+**2) Download a Custom Dataset that is Properly Formatted**
 
 Roboflow will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
 It's worth noting that the Ultralytics solution requires a YAML file that specifies the location of your training and test data.
@@ -100,7 +100,7 @@ This format is also written for us by the Roboflow export.
 from roboflow import Roboflow
 rf = Roboflow(model_format="yolov5", notebook="roboflow-yolov5")
 ```
-3) Specify the Model Configuration and Architecture
+**3) Specify the Model Configuration and Architecture**
 
 We'll create a yaml script that specifies the parameters for our model, such as the number of classes, anchors, and layers.
 The images are accessed and used as input by the YOLOv5 model on PyTorch through a yaml file providing summary information about the data set.
@@ -200,7 +200,7 @@ head:
   ]
 ```
 
-3) Train the model
+**4) Train the model**
 
 The model will be trained using the train.py file and its adjustable parameters. 
 
@@ -224,7 +224,7 @@ We can play around with the following hyperparameters to obtain best results wit
  - nosave: only save the final checkpoint
  - cache: cache images for faster training
 
-4) Evaluate performance
+**5) Evaluate performance**
 
 After completing the training, we are now ready to assess the performance of our model.
 Tensorboard may be used to visualize the performance. 
@@ -242,7 +242,7 @@ Image(filename='/content/yolov5/runs/train/yolov5s_results/results.png', width=1
 ```
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture2.PNG)
 
-4) Visualize Our Training Data with Labels
+**6) Visualize Our Training Data with Labels**
 
 View the 'train*.jpg' images once training begins to show training images, labels, and augmentation effects.
 
@@ -257,7 +257,7 @@ last.pt is the weight at the last epoch. The weight at the last epoch for highes
 Both files are under 14MB in size, making them easy to incorporate into AI systems. 
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture6.PNG)
 
-5) Running Inference on Test Images
+**7) Running Inference on Test Images**
 
 Performing object detection with trained weights is analogous to training the model.
 The detect.py command file will be compiled, and it will reconstruct the architecture used in the training.
@@ -281,13 +281,15 @@ for imageName in glob.glob('/content/yolov5/runs/detect/exp/*.jpg'): #assuming J
     print("\n")
  ```
  
-6) Export Trained Weights for Future Inference
+**8) Export Trained Weights for Future Inference**
+
 After you've trained your own detector, you may export the trained weights you've created here for use inference on other devices. 
 
 ```
 from google.colab import drive
 drive.mount('/content/gdrive')
 ```
+
 ```
 %cp /content/yolov5/runs/train/yolov5s_results/weights/best.pt /content/gdrive/My\ Drive
 ```
