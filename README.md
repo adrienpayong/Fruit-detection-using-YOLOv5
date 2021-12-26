@@ -293,3 +293,4 @@ drive.mount('/content/gdrive')
 ```
 %cp /content/yolov5/runs/train/yolov5s_results/weights/best.pt /content/gdrive/My\ Drive
 ```
+We have also performed fruit detection with tensorflow2 object detection model ![here](https://github.com/adrienpayong/fruit-detection-/blob/main/TFLite_fruit_Object_Detection.ipynb)
