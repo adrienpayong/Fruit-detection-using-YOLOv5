@@ -248,4 +248,6 @@ View the 'train*.jpg' images once training begins to show training images, label
 
 
 For training, a mosaic dataloader (shown below) is employed, a novel dataloading approach invented by Glenn Jocher and initially featured in ![YOLOv4](https://arxiv.org/abs/2004.10934). 
+
+![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
