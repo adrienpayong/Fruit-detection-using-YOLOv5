@@ -100,3 +100,23 @@ This format is also written for us by the Roboflow export.
 from roboflow import Roboflow
 rf = Roboflow(model_format="yolov5", notebook="roboflow-yolov5")
 ```
+3) Specify the Model Configuration and Architecture
+
+We'll create a yaml script that specifies the parameters for our model, such as the number of classes, anchors, and layers.
+The images are accessed and used as input by the YOLOv5 model on PyTorch through a yaml file providing summary information about the data set.
+The format of the data.yaml file used in the YOLO model is as follows:
+1. train: ‘training set directory path’
+2. val: ‘validation set directory path’
+3.
+4. nc: ‘number of classes’
+5. names: ‘name of objects
+Because the specified dataset does not include a data.yaml file, it must be initialized.
+Typically, this data.yaml file is created in Notepad or Notepad ++, then saved in yaml format and uploaded to Drive.
+However, it will be written directly in Colab in this case.
+
+```
+# define number of classes based on YAML
+import yaml
+with open(dataset.location + "/data.yaml", 'r') as stream:
+    num_classes = str(yaml.safe_load(stream)['nc'])
+```
