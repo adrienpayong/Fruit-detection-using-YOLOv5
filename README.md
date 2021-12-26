@@ -90,5 +90,10 @@ However, this is simply a basic design; researchers may modify it to provide the
 !git clone https://github.com/ultralytics/yolov5  # clone repo
 %cd yolov5
 !git reset --hard 886f1c03d839575afecb059accf74296fad395b6
+# install dependencies as necessary
+!pip install -qr requirements.txt  # install dependencies (ignore errors)
+import torch
+from IPython.display import Image, clear_output  # to display images
+from utils.google_utils import gdrive_download  # to download models/datasets
 ```
 
