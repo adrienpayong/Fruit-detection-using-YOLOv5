@@ -82,5 +82,13 @@ To train our detector we take the following steps:
 - Run YOLOv5 inference on test images
 - Export saved YOLOv5 weights for future inference
 
+YOLOv5 is built by Ultralystic using the PyTorch framework, which is one of the most popular in the AI community.
+However, this is simply a basic design; researchers may modify it to provide the best results for specific issues by adding layers, eliminating blocks, including new image processing techniques, modifying the optimization methods or activation functions, and so on. 
 
+```
+# clone YOLOv5 repository
+!git clone https://github.com/ultralytics/yolov5  # clone repo
+%cd yolov5
+!git reset --hard 886f1c03d839575afecb059accf74296fad395b6
+```
 
