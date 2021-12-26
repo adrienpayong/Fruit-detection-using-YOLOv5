@@ -251,3 +251,20 @@ For training, a mosaic dataloader (shown below) is employed, a novel dataloading
 
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
+
+Furthermore, the model records two weighting results as pt files.
+last.pt is the weight at the last epoch. The weight at the last epoch for highest accuracy is best.pt
+Both files are under 14MB in size, making them easy to incorporate into AI systems. 
+![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture6.PNG)
+
+5) Running Inference on Test Images
+
+Performing object detection with trained weights is analogous to training the model.
+The detect.py command file will be compiled, and it will reconstruct the architecture used in the training.
+Trained weights will be used to predict objects and restrict the size of their boxes. 
+```
+# when we ran this, we saw .007 second inference time. That is 140 FPS on a TESLA P100!
+# use the best weights!
+%cd /content/yolov5/
+!python detect.py --weights runs/train/yolov5s_results/weights/best.pt --img 416 --conf 0.4 --source fruit-detection--1/test/images
+```
