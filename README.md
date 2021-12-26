@@ -89,4 +89,13 @@ import torch
 from IPython.display import Image, clear_output  # to display images
 from utils.google_utils import gdrive_download  # to download models/datasets
 ```
-
+2) Download a Custom Dataset that is Properly Formatted
+Roboflow will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
+It's worth noting that the Ultralytics solution requires a YAML file that specifies the location of your training and test data.
+This format is also written for us by the Roboflow export. 
+```
+#follow the link below to get your download code from from Roboflow
+!pip install -q roboflow
+from roboflow import Roboflow
+rf = Roboflow(model_format="yolov5", notebook="roboflow-yolov5")
+```
