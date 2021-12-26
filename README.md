@@ -241,3 +241,11 @@ from utils.plots import plot_results  # plot results.txt as results.png
 Image(filename='/content/yolov5/runs/train/yolov5s_results/results.png', width=1000)  # view results.png
 ```
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture2.PNG)
+
+4) Visualize Our Training Data with Labels
+
+View the 'train*.jpg' images once training begins to show training images, labels, and augmentation effects.
+
+
+For training, a mosaic dataloader (shown below) is employed, a novel dataloading approach invented by Glenn Jocher and initially featured in ![YOLOv4](https://arxiv.org/abs/2004.10934). 
+![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
