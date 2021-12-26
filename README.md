@@ -132,7 +132,19 @@ def writetemplate(line, cell):
     with open(line, 'w') as f:
         f.write(cell.format(**globals()))
 ```
-
+This is what our YAML looks like: 
+```
+names:
+- '0'
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+nc: 6
+train: fruit-detection--1/train/images
+val: fruit-detection--1/valid/images
+```
 Glenn Jocher additionally includes various sample YOLOv5 models based on prior theory.
 On PyTorch, the YOLOv5 model will read these architectures from the yaml file and create them in the train.py file.
 This also simplifies the configuration of the architecture based on the various object detection challenges. 
