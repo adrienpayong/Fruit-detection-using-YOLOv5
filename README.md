@@ -211,3 +211,33 @@ The model will be trained using the train.py file and its adjustable parameters.
 %cd /content/yolov5/
 !python train.py --img 416 --batch 16 --epochs 50 --data {dataset.location}/data.yaml --cfg ./models/custom_yolov5s.yaml --weights '' --name yolov5s_results  --cache
 ```
+
+We can play around with the following hyperparameters to obtain best results with our model:
+
+ - img: define input image size
+ - batch: determine batch size
+ - epochs: define the number of training epochs
+ - data: set the path to YAML file
+ - cfg: specify model configuration
+ - weights: specify a custom path to weights
+ - name: result names
+ - nosave: only save the final checkpoint
+ - cache: cache images for faster training
+
+4) Evaluate performance
+
+After completing the training, we are now ready to assess the performance of our model.
+Tensorboard may be used to visualize the performance. 
+```
+# Start tensorboard
+# Launch after you have started training
+# logs save in the folder "runs"
+%load_ext tensorboard
+%tensorboard --logdir runs
+```
+we can also output some older school graphs if the tensor board isn't working for whatever reason
+```
+from utils.plots import plot_results  # plot results.txt as results.png
+Image(filename='/content/yolov5/runs/train/yolov5s_results/results.png', width=1000)  # view results.png
+```
+![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture2.PNG)
