@@ -73,14 +73,7 @@ For further details, please see the [Yolov5 Github repository](https://github.co
 
 To train our detector we take the following steps:
 
-- Install YOLOv5 dependencies
-- Download custom YOLOv5 object detection data
-- Write our YOLOv5 Training configuration
-- Run YOLOv5 training
-- Evaluate YOLOv5 performance
-- Visualize YOLOv5 training data
-- Run YOLOv5 inference on test images
-- Export saved YOLOv5 weights for future inference
+1) Install YOLOv5 dependencies
 
 YOLOv5 is built by Ultralystic using the PyTorch framework, which is one of the most popular in the AI community.
 However, this is simply a basic design; researchers may modify it to provide the best results for specific issues by adding layers, eliminating blocks, including new image processing techniques, modifying the optimization methods or activation functions, and so on. 
