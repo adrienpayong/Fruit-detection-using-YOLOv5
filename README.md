@@ -187,3 +187,15 @@ head:
    [[17, 20, 23], 1, Detect, [nc, anchors]],  # Detect(P3, P4, P5)
   ]
 ```
+
+3) Train the model
+
+The model will be trained using the train.py file and its adjustable parameters. 
+
+```
+# train yolov5s on custom data for 100 epochs
+# time its performance
+%%time
+%cd /content/yolov5/
+!python train.py --img 416 --batch 16 --epochs 50 --data {dataset.location}/data.yaml --cfg ./models/custom_yolov5s.yaml --weights '' --name yolov5s_results  --cache
+```
