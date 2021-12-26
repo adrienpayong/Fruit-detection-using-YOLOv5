@@ -268,3 +268,26 @@ Trained weights will be used to predict objects and restrict the size of their b
 %cd /content/yolov5/
 !python detect.py --weights runs/train/yolov5s_results/weights/best.pt --img 416 --conf 0.4 --source fruit-detection--1/test/images
 ```
+After the detection is completed, the predicted bounding boxes that cover the objects will be drawnn into the image.
+They will be stored in the same folder as the training phase's results.
+#display inference on ALL test images
+#this looks much better with longer training above
+```
+import glob
+from IPython.display import Image, display
+
+for imageName in glob.glob('/content/yolov5/runs/detect/exp/*.jpg'): #assuming JPG
+    display(Image(filename=imageName))
+    print("\n")
+ ```
+ 
+6) Export Trained Weights for Future Inference
+After you've trained your own detector, you may export the trained weights you've created here for use inference on other devices. 
+
+```
+from google.colab import drive
+drive.mount('/content/gdrive')
+```
+```
+%cp /content/yolov5/runs/train/yolov5s_results/weights/best.pt /content/gdrive/My\ Drive
+```
