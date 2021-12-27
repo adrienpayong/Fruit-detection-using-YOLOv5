@@ -21,7 +21,9 @@ You may create a robot or a self-driving vehicle that can recognize and pick fru
 ## Aim
 
 To build a robust fruit detection system using YOLOv5.
-Tech stack
+
+## Tech stack
+
 - Language: Python
 - Object detection: YOLOv5
 - Data annotation: Robotflow
