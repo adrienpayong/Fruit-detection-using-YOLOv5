@@ -42,7 +42,9 @@ minutes. [Explore that dataset here!](https://storage.googleapis.com/openimages/
  #### b. Creating your dataset and then labelling it manually
 We can create a dataset manually by collecting images from google image
 scraper or manually clicking them and then marking them using an image
-annotation tool.
+annotation tool like [labelImg](https://github.com/tzutalin/labelImg), ![CVAT](https://github.com/openvinotoolkit/cvat).
+When annotating oneself, be sure to adhere to recommended practices.
+More details can be found at this page. 
 
 ## YOLO v5 Model Architecture
 
@@ -96,7 +98,7 @@ from utils.google_utils import gdrive_download  # to download models/datasets
 ```
 **2) Download a Custom Dataset that is Properly Formatted**
 
-![Roboflow](roboflow.com) will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
+![Roboflow](https://app.roboflow.com) will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
 It's worth noting that the Ultralytics solution requires a YAML file that specifies the location of your training and test data.
 This format is also written for us by the Roboflow export. 
 
