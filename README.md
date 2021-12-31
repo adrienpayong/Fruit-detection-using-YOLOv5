@@ -40,7 +40,7 @@ We can gather thousands of images and their auto-generated labels within
 minutes. [Explore that dataset here!](https://storage.googleapis.com/openimages/web/index.html)
 
  #### b. Creating your dataset and then labelling it manually
-We will create a dataset manually by collecting images from google image
+We can create a dataset manually by collecting images from google image
 scraper or manually clicking them and then marking them using an image
 annotation tool.
 
@@ -78,7 +78,10 @@ To train our detector we take the following steps:
 **1) Install YOLOv5 dependencies**
 
 YOLOv5 is built by Ultralystic using the PyTorch framework, which is one of the most popular in the AI community.
-However, this is simply a basic design; researchers may modify it to provide the best results for specific issues by adding layers, eliminating blocks, including new image processing techniques, modifying the optimization methods or activation functions, and so on. 
+However, this is simply a basic design; researchers may modify it to provide the best results for specific issues by adding layers, eliminating blocks, including new image processing techniques, modifying the optimization methods or activation functions, and so on. To use Google Colab, you must have a Google account.
+You may either train using my notebook or make your own journal and follow along. You will obtain a free GPU for 12 hours at Google Colab.
+Change the runtime session in Colab to GPU if you use a new notebook.
+
 
 ```
 # clone YOLOv5 repository
@@ -96,11 +99,20 @@ from utils.google_utils import gdrive_download  # to download models/datasets
 Roboflow will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
 It's worth noting that the Ultralytics solution requires a YAML file that specifies the location of your training and test data.
 This format is also written for us by the Roboflow export. 
-```
-#follow the link below to get your download code from from Roboflow
-!pip install -q roboflow
+
+```!pip install -q roboflow
 from roboflow import Roboflow
 rf = Roboflow(model_format="yolov5", notebook="roboflow-yolov5")
+```
+
+```
+Because I am importing my dataset to robotflow, I must provide an API key, the version and the name of the project to dowload the data as we can see below
+%cd /content/yolov5
+#after following the link above, receive python code with these fields filled in
+from roboflow import Roboflow
+rf = Roboflow(api_key="WnPvnqaYefRxjIQZKVcz")
+project = rf.workspace().project("fruit-detection-iqgy7")
+dataset = project.version(1).download("yolov5")
 ```
 **3) Specify the Model Configuration and Architecture**
 
