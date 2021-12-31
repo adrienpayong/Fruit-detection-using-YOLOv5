@@ -321,4 +321,4 @@ drive.mount('/content/gdrive')
 ```
 %cp /content/yolov5/runs/train/yolov5s_results/weights/best.pt /content/gdrive/My\ Drive
 ```
-Here’s the link to my Notebook: ![](https://github.com/adrienpayong/fruit-detection-/blob/main/fruitdetection_Train_YOLOv5.ipynb)
+Here’s the link to github: ![link](https://github.com/adrienpayong/fruit-detection-/blob/main/fruitdetection_Train_YOLOv5.ipynb)
