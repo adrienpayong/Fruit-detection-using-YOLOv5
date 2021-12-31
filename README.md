@@ -250,8 +250,19 @@ View the 'train*.jpg' images once training begins to show training images, label
 
 
 For training, a mosaic dataloader (shown below) is employed, a novel dataloading approach invented by Glenn Jocher and initially featured in ![YOLOv4](https://arxiv.org/abs/2004.10934). 
+```
+# first, display our ground truth data
+print("GROUND TRUTH TRAINING DATA:")
+Image(filename='/content/yolov5/runs/train/yolov5s_results/test_batch0_labels.jpg', width=900)
+```
 
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
+
+```
+# print out an augmented training example
+print("GROUND TRUTH AUGMENTED TRAINING DATA:")
+Image(filename='/content/yolov5/runs/train/yolov5s_results/train_batch0.jpg', width=900)
+```
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
 
 Furthermore, the model records two weighting results as pt files.
