@@ -96,7 +96,7 @@ from utils.google_utils import gdrive_download  # to download models/datasets
 ```
 **2) Download a Custom Dataset that is Properly Formatted**
 
-Roboflow will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
+![Roboflow](roboflow.com) will be used to download our dataset. The "YOLOv5 PyTorch" output format should be used.
 It's worth noting that the Ultralytics solution requires a YAML file that specifies the location of your training and test data.
 This format is also written for us by the Roboflow export. 
 
@@ -105,8 +105,9 @@ from roboflow import Roboflow
 rf = Roboflow(model_format="yolov5", notebook="roboflow-yolov5")
 ```
 
-```
 Because I am importing my dataset to robotflow, I must provide an API key, the version and the name of the project to dowload the data as we can see below
+
+```
 %cd /content/yolov5
 #after following the link above, receive python code with these fields filled in
 from roboflow import Roboflow
@@ -114,6 +115,7 @@ rf = Roboflow(api_key="WnPvnqaYefRxjIQZKVcz")
 project = rf.workspace().project("fruit-detection-iqgy7")
 dataset = project.version(1).download("yolov5")
 ```
+
 **3) Specify the Model Configuration and Architecture**
 
 We'll create a yaml script that specifies the parameters for our model, such as the number of classes, anchors, and layers.
