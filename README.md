@@ -44,7 +44,7 @@ We can create a dataset manually by collecting images from google image
 scraper or manually clicking them and then marking them using an image
 annotation tool like [labelImg](https://github.com/tzutalin/labelImg), ![CVAT](https://github.com/openvinotoolkit/cvat).
 When annotating oneself, be sure to adhere to recommended practices.
-More details can be found at this ![page](https://nanonets.github.io/tutorials-page/docs/annotate). 
+More details can be found at this [page](https://nanonets.github.io/tutorials-page/docs/annotate). 
 
 ## YOLO v5 Model Architecture
 
