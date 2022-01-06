@@ -69,7 +69,7 @@ The network is trained to detect an object on the changed image in the second st
 Yolov5 is similar to Yolov4 but differs in the following ways:
 - Yolov4 was provided as part of the Darknet framework, which is written in C.
 Yolov5 is built on top of the PyTorch framework.
-- Yolov4 configuration is by using.cfg files, however Yolov5 use.yaml files for configuration. 
+- Yolov4 use .cfg files for configuration and Yolov5 use .yaml files for configuration. 
 
 For further details, please see the [Yolov5 Github repository](https://github.com/ultralytics/yolov5). 
 
