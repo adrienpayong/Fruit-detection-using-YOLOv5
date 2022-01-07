@@ -129,7 +129,7 @@ The format of the data.yaml file used in the YOLO model is as follows:
 - names: ‘name of objects'
 
 
-Because the specified dataset does not include a data.yaml file, it must be initialized.
+Because the specified dataset does not include a data .yaml file, it must be initialized.
 Typically, this data.yaml file is created in Notepad or Notepad ++, then saved in yaml format and uploaded to Drive.
 However, it will be written directly in Colab in this case.
 
@@ -223,7 +223,7 @@ head:
 The model will be trained using the train.py file and its adjustable parameters. 
 
 ```
-# train yolov5s on custom data for 100 epochs
+# train yolov5s on custom data for 50 epochs
 # time its performance
 %%time
 %cd /content/yolov5/
