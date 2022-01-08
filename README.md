@@ -282,7 +282,7 @@ Image(filename='/content/yolov5/runs/train/yolov5s_results/train_batch0.jpg', wi
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/capture3.PNG)
 
 Furthermore, the model records two weighting results as pt files.
-last.pt is the weight at the last epoch. The weight at the last epoch for highest accuracy is best.pt
+last.pt is the weight at the last epoch. The weight at the last epoch for highest accuracy is best.pt.
 Both files are under 14MB in size, making them easy to incorporate into AI systems. 
 
 ![source](https://github.com/adrienpayong/fruit-detection-/blob/main/Capture6.PNG)
@@ -313,7 +313,7 @@ for imageName in glob.glob('/content/yolov5/runs/detect/exp/*.jpg'): #assuming J
  
 **8) Export Trained Weights for Future Inference**
 
-After you've trained your own detector, you may export the trained weights you've created here for use inference on other devices. 
+After you've trained your own detector, you may export the trained weights you've created here for future inference on other devices. 
 
 ```
 from google.colab import drive
