@@ -107,7 +107,7 @@ from roboflow import Roboflow
 rf = Roboflow(model_format="yolov5", notebook="roboflow-yolov5")
 ```
 
-Because I am importing my dataset to robotflow, I must provide an API key, the version and the name of the project to dowload the data as we can see below
+Because I am importing my dataset to robotflow, I must provide an API key, the version and the name of the project to download the data as we can see below
 
 ```
 %cd /content/yolov5
