@@ -265,7 +265,7 @@ Image(filename='/content/yolov5/runs/train/yolov5s_results/results.png', width=1
 View the 'train*.jpg' images once training begins to show training images, labels, and augmentation effects.
 
 
-For training, a mosaic dataloader (shown below) is employed, a novel dataloading approach invented by Glenn Jocher and initially featured in ![YOLOv4](https://arxiv.org/abs/2004.10934). 
+For training, a mosaic dataloader (shown below) is employed, a novel dataloading approach invented by Glenn Jocher and initially featured in [YOLOv4](https://arxiv.org/abs/2004.10934). 
 ```
 # first, display our ground truth data
 print("GROUND TRUTH TRAINING DATA:")
